@@ -1,0 +1,78 @@
+# Syntax Differences: Python vs. Java
+
+1. **Variable Declaration:**
+   - **Python**: No type declaration; type inferred.
+     ```python
+     x = 10
+
+   - **Java**: Explicit type required.
+     ```java
+     int x = 10;
+
+
+2. **Print Statement:**
+   - **Python**: `print()` function.
+     ```python
+     print("Hello")
+  
+   - **Java**: `System.out.println()`.
+     ```java
+     System.out.println("Hello");
+     
+
+3. **Indentation vs. Curly Braces:**
+   - **Python**: Indentation defines blocks.
+     ```python
+     if x > 5:
+         print("x > 5")
+  
+   - **Java**: Curly braces define blocks.
+     ```java
+     if (x > 5) {
+         System.out.println("x > 5");
+     }
+  
+
+4. **Function Definitions:**
+   - **Python**: `def` keyword.
+     ```python
+     def greet(name):
+         print(name)
+    
+   - **Java**: Requires return type and `public`/`private`.
+     ```java
+     public void greet(String name) {
+         System.out.println(name);
+     }
+  
+
+5. **Classes and Objects:**
+   - **Python**: Direct object instantiation.
+     ```python
+     class Person:
+         def __init__(self, name):
+             self.name = name
+     p = Person("Alice")
+  
+   - **Java**: Use `new` to instantiate.
+     ```java
+     class Person {
+         String name;
+         public Person(String name) {
+             this.name = name;
+         }
+     }
+     Person p = new Person("Alice");
+    
+
+6. **Loops:**
+   - **Python**: `for` can iterate over items.
+     ```python
+     for i in range(5):
+         print(i)
+  
+   - **Java**: Standard `for` loop.
+     ```java
+     for (int i = 0; i < 5; i++) {
+         System.out.println(i);
+     }
